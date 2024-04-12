@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button:active {
+        background-color: goldenrod;
+        color: aqua;
+        font-size: 40px;
+      }
+      .btn button:hover {
+        font-size: 30px;
+        background-color: red;
+        color: white;
+      }
+      .p1::first-letter {
+        background-color: aqua;
+        font-size: 30px;
+        color: black;
+      }
+      .p2::first-line {
+        background-color: grey;
+        font-size: 35px;
+        color: white;
+      }
+      .p3 > p::selection {
+        background-color: red;
+      }
+      .l1 > li::marker {
+        content: "*";
+        color: orange;
+        font-size: 35px;
+      }
+      .l2 > li::marker {
+        content: "😁";
+        font-size: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <a href="index.html">Home page</a>
+    <hr />
+    <h1>
+      <u><i>Pseudo Column & elements</i></u> :
+    </h1>
+    <h3>
+      <u><i>Pseudo Class</i></u> :
+    </h3>
+    <li>
+      It is user to add styles for the html only when the selectors meet the
+      certain conditions.
+    </li>
+    <li>It is defined using <mark>colon(:)</mark>.</li>
+    <ol>
+      <li><b>active</b></li>
+      <ul>
+        <li>It will work when ever we will click on the following element.</li>
+        <li>
+          <mark
+            >Syntax :- tag:active { background-color: goldenrod; color: aqua;
+            font-size: 40px;}</mark
+          >
+        </li>
+        <button>Submit</button>
+      </ul>
+      <br />
+      <li><b>hover</b></li>
+      <ul>
+        <li>
+          It will work when ever we will move cursor on the following element.
+        </li>
+        <li>
+          <mark
+            >Syntax :- tag:hover { background-color: goldenrod; color: aqua;
+            font-size: 40px;}</mark
+          >
+        </li>
+        <div class="btn"><button>Submit</button></div>
+        <br />
+      </ul>
+
+      <li><b>focus</b></li>
+    </ol>
+
+    <h3>
+      <u><i>Pseudo element</i></u> :
+    </h3>
+    <li>
+      It is used to add styles by selecting a specific part of an element.
+    </li>
+    <li>It is defined using double <mark>colon(::)</mark>.</li>
+    <ol>
+      <li><b>first-line</b></li>
+      <ul>
+        <li>
+          This pseudo element put style for the first line of paragraph
+          selected.
+        </li>
+        <li>
+          <mark
+            >Syntax :- p::first-line{ background-color: blue; color: whitesmoke;
+            font-size: 50px; }</mark
+          >
+        </li>
+        <div class="p2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            ipsa nobis facilis corrupti repellat molestias inventore totam ut
+            esse qui. Cupiditate, explicabo. Harum aut porro officiis corrupti
+            corporis eveniet nam.
+          </p>
+        </div>
+      </ul>
+      <br />
+
+      <li><b>first-letter</b></li>
+      <ul>
+        <li>
+          This pseudo element put style for the first letter of paragraph
+          selected.
+        </li>
+        <li>
+          <mark
+            >Syntax :- p::first-letter{ background-color: blue; color:
+            whitesmoke; font-size: 50px; }</mark
+          >
+        </li>
+        <div class="p1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            ipsa nobis facilis corrupti repellat molestias inventore totam ut
+            esse qui. Cupiditate, explicabo. Harum aut porro officiis corrupti
+            corporis eveniet nam.
+          </p>
+        </div>
+      </ul>
+      <br />
+
+      <li><b>marker</b></li>
+      <ul>
+        <li>
+          This pseudo element put style for changing the denoted part of lists.
+        </li>
+        <li>
+          <mark
+            >Syntax :- li::marker{ content:'*'; color: whitesmoke; font-size:
+            50px; }</mark
+          >
+        </li>
+        <div class="l1"><li>Hello--its a list</li></div>
+        <li>
+          In above example it is a list but by using marker pseudo element we
+          have changed the denotion to * mark be can also use emojies or images.
+        </li>
+        <p><b>Some more examples :</b></p>
+        <div class="l2"><li>Hello--its a list</li></div>
+      </ul>
+      <br />
+
+      <li><b>selection</b></li>
+      <ul>
+        <li>
+          This pseudo element put style for when we will select something or
+          trying to copy something from web page then it will work.
+        </li>
+        <li>
+          <mark
+            >Syntax :- p::selection{ background-color: blue; color: whitesmoke;
+            font-size: 50px; }</mark
+          >
+        </li>
+        <div class="p3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            ipsa nobis facilis corrupti repellat molestias inventore totam ut
+            esse qui. Cupiditate, explicabo. Harum aut porro officiis corrupti
+            corporis eveniet nam.
+          </p>
+        </div>
+      </ul>
+      <br />
+      <li><b>placeholder</b></li>
+      <ul>
+        <li>
+          This pseudo element put style for placeholder in forms in input tags.
+        </li>
+      </ul>
+      <br />
+    </ol>
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="intro.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="box.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>

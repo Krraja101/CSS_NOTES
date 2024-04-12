@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #JSP {
+        background-color: rgb(240, 152, 11);
+        color: rgb(22, 22, 21);
+        font-size: 25px;
+        /* We always used to put font size in pixels. */
+        /* By default the pixle size is 16px */
+        font-weight: "Franklin Gothic Medium", "Arial Narrow", "";
+        text-align: center;
+        /* text align is used instead of aling in html. */
+      }
+      #QSP {
+        background-color: darkcyan;
+        color: coral;
+        font-size: 25px;
+        text-align: center;
+      }
+      .QSP h1 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Home page</a>
+    <hr />
+    <h1>
+      <u><i>Selectors</i></u> :
+    </h1>
+    <li>
+      Selectors are used to put style internally or externally on the elements.
+    </li>
+    <li>Basically we having 6 types of selectors to put styles :-</li>
+    <ol>
+      <li><b>Id selector (#)</b></li>
+      <ul>
+        <li>
+          Id means can be given to an element unique within a tag using id
+          attribute.
+        </li>
+        <li>
+          The id names can be selected in css by using <mark>#</mark> Symbol.
+        </li>
+        <li>Id has more priority then class selector.</li>
+        <li><mark>Syntax :- #QSP{background-color: darkcyan;}</mark></li>
+      </ul>
+      <br />
+
+      <li><b>Class slector(.)</b></li>
+      <ul>
+        <li>Class names are not unique.</li>
+        <li>For class selector we use <mark>'.'</mark> for the styling.</li>
+        <li>
+          If we want to keep the same style for more than one division we can
+          use same class name for all the divisions.
+        </li>
+        <li><mark>Syntax :- .QSP{background-color: darkcyan;}</mark></li>
+      </ul>
+      <br />
+
+      <li><b>Element selector(directly using div tag)</b></li>
+      <ul>
+        <li>
+          selecting the elements directly based on there names which will select
+          all the respective element in the document.
+        </li>
+        <li><mark>Syntax :- h1{background-color: darkcyan;}</mark></li>
+      </ul>
+      <br />
+
+      <li><b>Univesal selector(*) </b></li>
+      <ul>
+        <li>
+          <mark>* </mark> is used as a universal selector which selects all the
+          element in the page.
+        </li>
+        <li><mark>Syntax :- *{margin:0;padding:0;}</mark></li>
+      </ul>
+      <br />
+
+      <li><b>Desendent selector( .QSP h1{ background-color: red; } )</b></li>
+      <ul>
+        <li>Selecting a particular child element within a div or a section.</li>
+        <li><mark>Syntax :- .classnmae element { property : value ;}</mark></li>
+      </ul>
+      <br />
+
+      <li><b>Group selector( h1,h2{color:chartreuse;})</b></li>
+      <ul>
+        <li>
+          Selecting the multiple element together in order to give common
+          styles.
+        </li>
+      </ul>
+    </ol>
+
+    <hr />
+    <h1>Example :</h1>
+    <div id="JSP">
+      <h1>Jspiders</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+        perferendis voluptatibus sapiente in voluptates corporis dolorem maxime
+        nobis necessitatibus, est, sunt illo repellendus sint excepturi tenetur.
+        Voluptate eaque ut laboriosam alias, nam possimus inventore est. Debitis
+        provident aliquam, repudiandae quis dignissimos deleniti quasi optio
+        cumque iusto recusandae esse praesentium quisquam?
+      </p>
+    </div>
+    <div id="QSP" class="QSP">
+      <h1>Qspiders</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+        perferendis voluptatibus sapiente in voluptates corporis dolorem maxime
+        nobis necessitatibus, est, sunt illo repellendus sint excepturi tenetur.
+        Voluptate eaque ut laboriosam alias, nam possimus inventore est. Debitis
+        provident aliquam, repudiandae quis dignissimos deleniti quasi optio
+        cumque iusto recusandae esse praesentium quisquam?
+      </p>
+    </div>
+    <hr />
+  </body>
+</html>

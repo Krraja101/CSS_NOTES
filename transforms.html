@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background: linear-gradient(red, blue);
+        /* background: linear-gradient(blue,transparent); */
+        /* background: linear-gradient(to right,green, transparent); */
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .box1 {
+        background: linear-gradient(red, transparent);
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .box2 {
+        background: linear-gradient(to right, red, transparent);
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Home page</a>
+    <hr />
+    <h1>
+      <i><u>Transform</u></i> :
+    </h1>
+    <li>
+      It is a CSS property is used to rotate, scale, skew, or move an element on
+      web page.
+    </li>
+    <li>
+      It consists of some properties which helps us to do above operations.
+    </li>
+    <ol>
+      <li><b>rotate</b></li>
+      <ul>
+        <li>
+          This property is used to rotate a particular element on web page.
+        </li>
+        <li>It can rotate in both clockwise and anti-clockwise directions.</li>
+        <li>
+          For rotating the element in the clockwise direction we need to pass
+          +ve value in rotate attribute.
+        </li>
+        <li><mark>Syntax : transform: rotate(360deg);</mark></li>
+        <li>
+          For rotating the element in the anti-clockwise direction we need to
+          pass -ve value in rotate attribute.
+        </li>
+        <li><mark>Syntax : transform: rotate(-360deg);</mark></li>
+      </ul>
+      <br />
+
+      <li><b>scale</b></li>
+      <ul>
+        <li>It is used to zoom in or zoom out an element on the web page.</li>
+        <li>
+          For zoom in the element we need to pass +ve value to the scale
+          attribute.
+        </li>
+        <li><mark>Syntax : transform: scale(5.0);</mark></li>
+        <li>
+          For zoom in the element we need to pass -ve value to the scale
+          attribute.
+        </li>
+        <li><mark>Syntax : transform: scale(-5.0);</mark></li>
+      </ul>
+      <br />
+
+      <li><b>translate</b></li>
+      <ul>
+        <li>It is used to move an element on page in X or Y axis.</li>
+        <li>
+          In this we having 3 attribute <mark>translate()</mark> ,
+          <mark>translateX()</mark> & <mark>translateY()</mark>
+        </li>
+        <br />
+        <li>
+          <mark>translate()</mark> is used to move an element in X-axis , if we
+          will pass +ve value then it will move in right side of the page.
+        </li>
+        <li><mark>Syntax : transform: translate(200px);</mark></li>
+        <li>
+          If we will pass -ve value to <mark>translate()</mark> attribute then
+          it will move to left side of web page.
+        </li>
+        <li><mark>Syntax : transform: translate(-200px);</mark></li>
+        <br />
+        <li>
+          <mark>translateX()</mark> is as same as <mark>translateX()</mark> both
+          are used to move an element in X-axis , if we will pass +ve value then
+          it will move in right side of the page.
+        </li>
+        <li><mark>Syntax : transform: translateX(200px);</mark></li>
+        <li>
+          If we will pass -ve value to <mark>translateX()</mark> attribute then
+          it will move to left side of web page.
+        </li>
+        <li><mark>Syntax : transform: translateX(-200px);</mark></li>
+        <br />
+        <li>
+          <mark>translateY()</mark> is used to move an element in Y-axis , if we
+          will pass +ve value then it will move in bottom of the page.
+        </li>
+        <li><mark>Syntax : transform: translateY(200px);</mark></li>
+        <li>
+          If we will pass -ve value to <mark>translateY()</mark> attribute then
+          it will move to top of web page.
+        </li>
+        <li><mark>Syntax : transform: translateY(-200px);</mark></li>
+      </ul>
+    </ol>
+    <h3>
+      <i><u>Some</u> <u>other</u> <u>attributes</u></i> :
+    </h3>
+    <ol>
+      <li><b>transition :</b></li>
+      <ul>
+        <li>
+          It is used to control the speed of operations done by transforms
+          property like rotate , scale or translate.
+        </li>
+        <li>Lower the value higher the speed.</li>
+        <li><mark>Syntax : transition:1s ;</mark></li>
+      </ul>
+      <br />
+      <li><b>box-shadow :</b></li>
+      <ul>
+        <li>It is used to put a shadow for the division ,image etc.....</li>
+        <li>It mainly contains four values X-axis,Y-axis,blur,colour</li>
+        <li><mark>Syntax : box-shadow: 10px 10px 5px black ;</mark></li>
+      </ul>
+      <br />
+      <li><b>box-shadow :</b></li>
+      <ul>
+        <li>It is as same as box-shadow property.</li>
+        <li>It is used for putting shadow effect in texts.</li>
+        <li>It also mainly contains 4 values X-axis,Y-axis,blur,colour</li>
+        <li><mark>Syntax : text-shadow: 10px 10px 5px black ;</mark></li>
+      </ul>
+      <br />
+      <li><b>background-color :</b></li>
+      <ul>
+        <li>It is used to put background color, for division,heading etc...</li>
+        <li><mark>Syntax : background-color: blue;</mark></li>
+      </ul>
+      <li><b>background-image :</b></li>
+      <ul>
+        <li>It is used to put background-image for a page or a division.</li>
+        <li>
+          For putting a image in background we need to use one attribute named
+          <mark>url()</mark> in the background property.
+        </li>
+        <li><mark>Syntax : background-image: url(Image_link);</mark></li>
+        <li>
+          <mark
+            >background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0,
+            0, 0.5) ), url("rbjs.jpg"); background-size: contain;
+            background-position: center; background-repeat: no-repeat;</mark
+          >
+        </li>
+      </ul>
+      <li><b>linear-gradient :</b></li>
+      <ul>
+        <li>It is used to put gradient color for background.</li>
+        <li>
+          It is always used with background properties like background or
+          background-image.
+        </li>
+        <li>
+          When it is used with background then it will be used as fill the
+          division with the gradient colors.
+        </li>
+        <li><mark>Syntax : background: linear-gradient(red,blue);</mark></li>
+        <p>Example :-</p>
+        <div class="box"></div>
+        <br />
+        <li>
+          <mark>Syntax : background: linear-gradient(red,transparent);</mark>
+        </li>
+        <p>Example :-</p>
+        <div class="box1"></div>
+        <br />
+        <li>
+          <mark
+            >Syntax : background: linear-gradient(to right,red,
+            transparent);</mark
+          >
+        </li>
+        <p>Example :-</p>
+        <div class="box2"></div>
+        <br />
+        <li>
+          In place of <b><i> to right </i></b> we can also use so we can put
+          background colors or <b> <i> to left , to top , to bottom </i> </b> to
+          put style according to our comfort.
+        </li>
+      </ul>
+    </ol>
+  </body>
+</html>

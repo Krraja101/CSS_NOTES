@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="index.html">Home page</a>
+    <hr />
+    <h1>
+      <i><u>Display</u> <u>Properties</u></i> :
+    </h1>
+    <li>
+      It represents how an html element will be displayed on the web page.
+    </li>
+    <li>Every html element will have its own default display property.</li>
+    <li>There are five way to represent element in web pages :</li>
+    <ol>
+      <li><b>Block</b></li>
+      <ul>
+        <li>
+          Elements that occupy 100% width and displays one by one are called
+          block level elements.
+        </li>
+        <li>Ex:- heading,paragraph,br,hr</li>
+      </ul>
+      <br />
+
+      <li><b>Inline</b></li>
+      <ul>
+        <li>
+          Elements that displayed in the same row are called as inline elements.
+        </li>
+        <li>
+          Inline elements does not support height and width properties so we
+          need to use inline-block property for merging the proeprty.
+        </li>
+        <li>EX:- ancher tag.</li>
+      </ul>
+      <br />
+
+      <li><b>Inline-block</b></li>
+      <ul>
+        <li>
+          Elements which displayed in the same row and also supports height and
+          width properties and called inline-block properties.
+        </li>
+        <li>EX:-img,input tags,audio.</li>
+      </ul>
+      <br />
+
+      <li><b>Flex</b></li>
+      <ul>
+        <li>This properties used to align a element in a row or colomn.</li>
+        <li>Flex should always be given for parent elements.</li>
+      </ul>
+      <br />
+
+      <li><b>None</b></li>
+      <ul>
+        <li>This is used to remove the element from the web page.</li>
+        <li>
+          Instead of this we can also use one property named
+          <mark>visibility:hidden ;</mark> this property allow us to hide the
+          particular element from the web page.
+        </li>
+        <li>
+          If we use visibility property to hide the particular element from the
+          web page it will be at its position but not visible,that means it will
+          not be removed.
+        </li>
+      </ul>
+    </ol>
+
+    <!-- ----------------- -->
+    <h3>
+      <i
+        ><u>Some</u> <u>important</u> <u>properties</u> <u>of</u> <u>flex</u></i
+      >
+      :
+    </h3>
+    <p><b># flex-direction :</b></p>
+    <li>It define the direction in which the flex items will be displayed.</li>
+    <li>All posibilities to decide the directions of flex is give below -</li>
+    <p>
+      <mark
+        >flex-direction: row-reverse;<br />
+        flex-direction: column;<br />
+        flex-direction: column-reverse;<br />
+        flex-direction: row;</mark
+      >
+    </p>
+
+    <p><b># justify-content :</b></p>
+    <li>
+      This property is used to align the flex items on the x axis provided if
+      there is sufficient amount of space in order to move the flex items.
+    </li>
+    <li>All posibilities to arrange flex items in x-axis is give below -</li>
+    <p>
+      <mark>
+        justify-content: start;<br />
+        justify-content: center;<br />
+        justify-content: end;<br />
+        justify-content:space-between ;<br />
+        justify-content: space-evenly;<br />
+        justify-content: space-around;</mark
+      >
+    </p>
+
+    <p><b># align-items :</b></p>
+    <li>This property is used to align the flex items on the y-axis.</li>
+    <li>All posibilities to arrange flex items in y-axis is give below -</li>
+    <p>
+      <mark>
+        align-items: start;<br />
+        align-items: center;<br />
+        align-items: end;
+      </mark>
+    </p>
+  </body>
+</html>

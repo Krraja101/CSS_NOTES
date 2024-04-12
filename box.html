@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: grey;
+        text-align: justify;
+        padding: 20px;
+        border: 10px double black;
+        border-radius: 15px;
+        margin: 40px;
+      }
+      button {
+        background-color: rgba(10, 187, 251, 0.539);
+        color: rgb(3, 17, 17);
+        padding: 8px 25px;
+        border: none;
+        border-radius: 2000px;
+      }
+      .btn {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Home page</a>
+    <hr />
+    <h1>BOX MODEL</h1>
+    <li>
+      Box model represents how a content will be displayed on the web page.
+    </li>
+    <li>
+      The box model consist on 4 parts that are
+      <i><big>Content area ,</big></i>
+      <i><big>Padding ,</big></i>
+      <i><big>Border </big></i> &
+      <i><big>Margin</big></i>
+    </li>
+    <li>
+      The box model consists of the content area which can be anything like text
+      or images which is surrounded by padding border and margin.
+    </li>
+
+    <h3>#1. Padding:-</h3>
+    <li>Padding represents the space between the content and the border.</li>
+    <li>The padding size will always in px.</li>
+    <li>
+      Padding with a single value will be applied on the four sides of the
+      content.
+    </li>
+    <li><mark>Syntax :- padding: 10px;</mark></li>
+    <li>
+      Padding can be given on individual sides, which can be applied in the
+      format in top right bottom and left.
+    </li>
+    <li><mark>Syntax :- padding-left: 30px; padding-top: 20px;;</mark></li>
+    <li>
+      We can also do like this instead of using padding left top keywords
+      <mark>padding: 20px 40px 30px;</mark>.
+    </li>
+    <li>
+      In this method for first value it will start from top and rotate the
+      values in clockwise manner.
+    </li>
+
+    <h3>#2. Border :-</h3>
+    <li>
+      Border for the content can be given using three values that are - size
+      type color
+    </li>
+    <li>
+      <mark
+        >Syntax :- border: size(px) type(solid,double,dashed,dotted)
+        color;</mark
+      >
+    </li>
+    <li>Border radius property is used to curve the edges.</li>
+    <li><mark> border-radius: 15px;</mark></li>
+    <li>Border radius can also be given for individual edges.</li>
+    <li><mark>Syntax :- border-top-right-radius: 35px; </mark></li>
+
+    <h3>#3. Margin:-</h3>
+    <li>
+      It define the space between the two diffrent elements in the web page.
+    </li>
+    <li>We can also use margin to move an element in the web page.</li>
+    <li>It follows same syntax as padding.</li>
+
+    <hr />
+    <h1>EXAMPLE : -</h1>
+    <div class="box">
+      <h1>BOX MODEL</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+        accusantium, voluptates possimus cumque repellendus molestiae aperiam
+        fugit fuga explicabo nobis maxime unde? Natus optio fugit deleniti
+        temporibus voluptates culpa quos.
+      </p>
+      <div class="btn">
+        <button>SUBMIT</button>
+      </div>
+    </div>
+    <div class="box">
+      <h1>BOX MODEL</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+        accusantium, voluptates possimus cumque repellendus molestiae aperiam
+        fugit fuga explicabo nobis maxime unde? Natus optio fugit deleniti
+        temporibus voluptates culpa quos.
+      </p>
+    </div>
+    <hr />
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BASIC OF CSS</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <a href="index.html">Home page</a>
+    <hr />
+    <li>Basically CSS is classified in three parts:</li>
+    <ul type="circle">
+      <li>Inline CSS</li>
+      <li>Internal CSS</li>
+      <li>External CSS</li>
+    </ul>
+    <hr />
+    <h2>1. Inline CSS</h2>
+    <li>It is used for specific styling in the single tag.</li>
+    <li>
+      We can achieve this by using attribute named as <b>'style'</b> in any
+      specific HTML tag
+    </li>
+    <li>Inline css is having higher priority then all other types.</li>
+    <li>
+      Style attribute contain lot of funtionality for html tags like
+      (heading,paragraph)
+    </li>
+    <li>Some example for INLINE CSS are :</li>
+    <h3>Syntax :</h3>
+    <p>< h4 style="color: aqua;">CONTENT< /h4></p>
+    <li>
+      <b>'color'</b> is a property of style attribute,it is used to put colours
+      in the content.
+    </li>
+    <h4 style="color: aqua">INLINE CSS</h4>
+
+    <h3>Syntax :</h3>
+    <p>< h4 style="color: blueviolet; background-color:coral;">CONTENT< /h4></p>
+    <li>
+      <b>'background-color'</b> is a property of style attribute,it is used to
+      put background for the given content.
+    </li>
+    <h4 style="color: blueviolet; background-color: coral">INLINE CSS</h4>
+
+    <h3>Syntax :</h3>
+    <p>< p style="background-color:pink;">CONTENT< /p></p>
+    <p style="background-color: pink">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, rem, error
+      corrupti alias sequi nam eaque iste amet sit reiciendis maxime nisi
+      sapiente enim cumque ex placeat neque porro. Tempora?
+    </p>
+    <hr />
+
+    <h2>2. Internal CSS</h2>
+    <li>It is used for putting style for a single html file.</li>
+    <li>
+      We can achieve this by using <b>'style'</b> as a tag inside
+      <b>head</b> tag in HTML file.
+    </li>
+    <h3>Syntax :</h3>
+    <p>
+      CASE I :- < style> h1{ color: royalblue; } p{ color: aqua; } < /style>
+    </p>
+    <p>CASE II :- < style> h1,p{ color: royalblue; } < /style></p>
+    <li>
+      This is used for putting one common style for a specific tag
+      as(h1,p.....etc)
+    </li>
+    <li>
+      Where ever we will use tag which is mentioned inside the style tag it will
+      having same style.
+    </li>
+    <li>For CASE I we put seperate style for each tag (h1 & p).</li>
+    <li>But in CASE II we put same style for tags (h1 & p).</li>
+    <hr />
+
+    <h2>3. External CSS</h2>
+    <li>
+      We can achieve this by using one seperate file with
+      <b>'css'</b> extention.
+    </li>
+    <li>
+      We can use this file for handling all kind of style related to html files
+      and seperately we can link according to use.
+    </li>
+    <li>By Using < link> tag we can connect CSS file with HTML file.</li>
+    <li>< link> tag contains <b>href=""</b> which refer to the css file.</li>
+    <li>< link> tag should be used within head tag.</li>
+    <h3>Syntax :</h3>
+    <p>< link rel="stylesheet" href="index.css"></p>
+    <hr />
+    <h1>NOTES :-</h1>
+    <li>Inline CSS has higher priority then all other CSS.</li>
+    <li>
+      If in some tags we put style using internal or external CSS and we also
+      did some inline CSS there then the priority will be to the inline CSS.
+    </li>
+    <li>
+      But in case of internal and external CSS we dont have priority for them
+      because it follows overridding property.
+    </li>
+    <h3>Syntax :</h3>
+    <p>
+      CASE I :- < link rel="stylesheet" href="index.css"> < style> h1{ color:
+      blueviolet; } < /style>
+    </p>
+    <li>
+      For CASE I the internal style will be executed because when the code will
+      be executed line by line style defined by using internal CSS is after
+      external CSS.
+    </li>
+    <p>
+      CASE II :- < style> h1{ color: blueviolet; } < /style> < link
+      rel="stylesheet" href="index.css">
+    </p>
+    <li>
+      For CASE II the external CSS style will be executed because when the code
+      will be executed line by line style defined by using external CSS is after
+      internal CSS.
+    </li>
+    <hr />
+    <div class="bottom">
+      <div>
+        <a href="intro.html"><big>Previous</big></a>
+      </div>
+      <div>
+        <a href="box.html"><big>Next</big></a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
